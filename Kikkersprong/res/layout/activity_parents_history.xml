@@ -13,7 +13,7 @@
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="[naam]&apos;s historiek"
+        android:text="Lotje&apos;s historiek"
         android:textColor="#FFFFFFFF"
         android:textSize="30sp" />
 
