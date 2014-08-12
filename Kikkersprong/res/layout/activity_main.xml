@@ -19,7 +19,8 @@
             android:id="@+id/imageView2"
             android:src="@drawable/db_conn_ok"
             android:layout_width="30sp"
-            android:layout_height="30sp" />
+            android:layout_height="30sp"
+            android:contentDescription="Status of the db connection" />
 
     </LinearLayout>
 
