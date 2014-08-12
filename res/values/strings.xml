@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Kikkersprong</string>
+    <string name="action_settings">Settings</string>
+
+    <string-array name="history_array">
+        <item>Dinsdag 1 april: 7u</item>
+        <item>Woensdag 2 april: 6.5u</item>
+        <item>Donderdag 3 april: 8u</item>
+        <item>Vandaag: 6u</item>
+    </string-array>
+    <string-array name="bill_array">
+        <item>Februari: betaald</item>
+        <item>Maart: te betalen – 350€</item>
+    </string-array>
+
+    <string name="title_activity_financial">Financiele administratie</string>
+
+</resources>

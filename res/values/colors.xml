@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+    <color android:id="@+id/color1" name="Blue">#FF00AAFF</color>
+    <color android:id="@+id/color2" name="mainstatusbar">#DD0088DD</color>
+</resources>
