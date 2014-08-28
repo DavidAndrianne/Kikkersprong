@@ -6,6 +6,7 @@ import java.util.List;
 
 public class Bill {
 	private Child child;
+	private String id;
 	private List<Stay> period = new ArrayList<Stay>();
 	private boolean isPaid = false;
 	private double total;
@@ -18,6 +19,9 @@ public class Bill {
 		return new File("MyReminder.txt");
 	}
 
+	public String getId() { return id; }
+	public void setId(String id) { this.id = id; }
+	
 	public List<Stay> getPeriod() {	return period; }
 	public void setPeriod(List<Stay> period) { this.period = period; }
 

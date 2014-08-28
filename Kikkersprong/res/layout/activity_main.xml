@@ -16,11 +16,11 @@
         android:background="@color/mainstatusbar" >
 
         <ImageView
-            android:id="@+id/imageView2"
+            android:id="@+id/db_conn"
             android:src="@drawable/db_conn_ok"
             android:layout_width="30sp"
             android:layout_height="30sp"
-            android:contentDescription="Status of the db connection" />
+            android:contentDescription="@string/db_conn_descr" />
 
     </LinearLayout>
 
@@ -42,34 +42,9 @@
             android:id="@+id/textView1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="DEMO: Duw op de QR-code om te scannen..."
+            android:text="Duw op de QR-code om in the checken..."
             android:textColor="#FFFFFFFF"
             android:textSize="20sp" />
-
-        <ImageView
-            android:id="@+id/imageView3"
-            android:layout_width="400sp"
-            android:layout_height="400sp"
-            android:layout_alignLeft="@+id/textView1"
-            android:layout_centerVertical="true"
-            android:adjustViewBounds="false"
-            android:baselineAlignBottom="false"
-            android:contentDescription="QR code scanner dummy"
-            android:cropToPadding="false"
-            android:fitsSystemWindows="false"
-            android:src="@drawable/qr_card"
-            android:onClick="welcome" />
-
-        <Button
-            android:id="@+id/button1"
-            style="?android:attr/buttonStyleSmall"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentBottom="true"
-            android:layout_centerHorizontal="true"
-            android:text="Mijn historiek"
-            android:onClick="viewHistory"
-            android:visibility="invisible" />
 
         <Button
             android:id="@+id/button2"
@@ -78,8 +53,34 @@
             android:layout_height="wrap_content"
             android:layout_alignParentBottom="true"
             android:layout_alignParentRight="true"
-            android:text="Financiele code"
-            android:onClick="viewFinancial" />
+            android:text="authentication"
+            android:onClick="updateUser" />
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="150sp"
+            android:layout_height="150sp"
+            android:layout_below="@+id/textView1"
+            android:layout_centerHorizontal="true"
+            android:adjustViewBounds="false"
+            android:baselineAlignBottom="false"
+            android:contentDescription="QR code scanner dummy"
+            android:cropToPadding="false"
+            android:fitsSystemWindows="false"
+            android:onClick="scanCode"
+            android:src="@drawable/qr_card" />
+
+        <Button
+            android:id="@+id/historyBtn"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/button2"
+            android:layout_alignBottom="@+id/button2"
+            android:layout_alignLeft="@+id/textView1"
+            android:onClick="viewHistory"
+            android:text="Mijn historiek"
+            android:visibility="invisible" />
 
     </RelativeLayout>
 
